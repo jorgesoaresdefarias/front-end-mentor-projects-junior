@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | [Blogr]</title>
+</head>
+<body>
+
+  <div class="wrapper__header">
+    <div class="header__mobile">
+      <img src="./images/logo.svg">
+      <div class="menu" onclick="showMenuMobile()">
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+      </div>
+      <div class="card">
+        <li>
+          <div><a>Product</a><div class="image" onclick="mobileProduct()"></div></div>
+          <div><a>Company</a><div class="image" onclick="mobileCompany()"></div></div>
+          <div><a>Connect</a><div class="image" onclick="mobileConnect()"></div></div>
+        </li>
+      </div>
+    </div>
+    <div class="header">
+      <div class="header__left">
+        <img src="./images/logo.svg">
+        <a onclick="openProduct()">Product</a>
+        <img src="./images/icon-arrow-light.svg " onclick="openProduct()">
+        <div class="card product">
+          <li>
+            <a>Overview</a>
+            <a>Pricing</a>
+            <a>Marketplace</a>
+            <a>Features</a>
+            <a>Integrations</a>
+          </li>
+        </div>
+        <a onclick="openCompany()">Company</a>
+        <img src="./images/icon-arrow-light.svg " onclick="openCompany()"> 
+        <div class="card company">
+          <li>
+            <a>About</a>
+            <a>Team</a>
+            <a>Blog</a>
+            <a>Careers</a>
+          </li>
+        </div>
+        <a onclick="openConnect()">Connect</a>
+        <img src="./images/icon-arrow-light.svg " onclick="openConnect()">
+        <div class="card connect">
+          <li>
+            <a>Contact</a>
+            <a>Newsletter</a>
+            <a>LinkedIn</a>
+          </li>
+        </div>
+      </div>
+      <div class="header__right">
+        <a href="">Login</a>
+        <button>Sign Up</button>
+      </div>
+    </div>
+    <h1>A modern publishing platform</h1>
+    <h2>Grow your audience and build your online brand</h2>
+    <div class="buttons">
+      <button class="button1">Start for Free</button>
+      <button class="button2">Learn More</button>
+    </div>
+  </div>
+
+  <div class="wrapper__text1">
+     <div class="text">
+       <h1>Designed for the future</h1>
+       <h2>Introducing an extensible editor</h2>
+       <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+        The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+        videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+        change the looks of a blog.</p>
+
+       <h2 class="title">Robust content management</h2>
+       <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+        by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+     </div>
+     <div class="image"></div>
+  </div>
+
+  <div class="info__div">
+    <div class="cellphone__image"></div>
+    <div class="info__text">
+      <h1>State of the Art Infrastructure</h1>
+      <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+        This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+    </div>
+  </div>
+
+  <div class="wrapper__text2">
+    <div class="image"></div>
+    <div class="text">
+      <h2>Free, open, simple</h2>
+      <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+        features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+        and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+      </p>
+      <h2 class="powerful">Powerful tooling</h2>
+      <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+        capable of producing even the most complicated sites.</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <img src="./images/logo.svg">
+    <div class="column">
+      <h3>Product</h3>
+      <p>Overview</p>
+      <p>Pricing</p>
+      <p>Marketplace</p>
+      <p>Features</p>
+      <p>Integrations</p>
+    </div>
+    <div class="column">
+      <h3>Company</h3>
+      <p>About</p>
+      <p>Team</p>
+      <p>Blog</p>
+      <p>Careers</p>
+    </div>
+    <div class="column">
+      <h3>Connect</h3>
+      <p>Contact</p>
+      <p>Newsletter</p>
+      <p>LinkedIn</p>
+    </div>
+  </div>
+</body>
+<script src="main.js"></script>
+</html>

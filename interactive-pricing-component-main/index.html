@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/general.css">
+  <link rel="stylesheet" href="./css/card/card.css">
+  <link rel="stylesheet" href="./css/switch/switch.css">
+  <link rel="stylesheet" href="./css/range/range.css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+
+<body>
+  <main>
+    <div class="header">
+      <h1>Simple, traffic-based pricing</h1>
+      <h2>Sign-up for our 30-days trial.</h2>
+      <h2>No credit card required</h2>
+    </div>
+    <div class="card">
+      <div class="top">
+        <h2>100K PAGEVIEWS</h2>
+        <div class="bar">
+          <input type="range" min="0" max="100" value="16" oninput="rangevalue.value=value" name="" id="">
+        </div>
+        <h1 id="rangevalue">$16.00<sup> / month</sup></h1>
+        <div class="description">
+          <p>Monthly Billing</p> 
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+          <p>Yearly Billing</p>
+          <div class="discount">-25%</div>
+        </div>
+      </div>
+      <hr>
+      <div class="bottom">
+        <div><img src="./images/icon-check.svg"> Unlimited websites</div>
+        <div><img src="./images/icon-check.svg"> 100% data ownership</div>
+        <div><img src="./images/icon-check.svg"> Email reports</div>
+        <button>Start my trial</button>
+      </div>
+    </div>
+  </main>
+</body>
+<script src="./main.js"></script>
+</html>

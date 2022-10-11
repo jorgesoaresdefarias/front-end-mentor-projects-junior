@@ -1,0 +1,76 @@
+@import "../general.css";
+
+.card {
+    background-color: var(--veryPaleBlueMainBackground);
+    width: 90%;
+    margin: 0 5% 0 5%;
+    border-radius: 10px;
+    padding-top: 5%;
+    box-shadow: 1px 1px 10px var(--lightGrayishBlueToggleBackground);
+}
+
+.card .top h2 {
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--grayishBlue);
+    letter-spacing: .1em;
+}
+
+.card .top h1 {
+    color: var(--darkDesaturatedBlue);
+}
+
+.card .top sup {
+    font-size: .5em;
+    color: var(--grayishBlue);
+}
+
+.card hr {
+    border-color: var(--veryPaleBlueMainBackground);
+}
+
+.card .top .description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 10%;
+    padding-left: 15%;
+}
+
+.card .top .description p {
+    font-size: .8em;
+    color: var(--grayishBlue);
+    margin: 0 2% 0 2%;
+}
+.card .top .description .discount {
+    background-color: var(--lightGrayishRed);
+    color: var(--lightRed);
+    border-radius: 50px;
+    font-size: .8em;
+    width: 15%;
+}
+.card .bottom {
+    padding: 5% 0 0 0;
+    font-size: .8em;
+    color: var(--grayishBlue);
+}
+.card .bottom img {
+    margin-right: 5%;
+}
+.card .bottom div {
+    margin-bottom: 3%;
+}
+
+.card .bottom button {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    height: 5vh;
+    width: 50%;
+    border: none;
+    border-radius: 50px;
+    color: var(--lightGrayishBlueToggleBackground);
+    background-color: var(--darkDesaturatedBlue);
+}
+.card .bottom button:hover {
+    color: white;
+}

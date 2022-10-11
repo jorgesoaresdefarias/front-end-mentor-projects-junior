@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;800&display=swap');
+
+:root {
+    --lightCyan: hsl(193, 38%, 86%);
+    --neonGreen: hsl(150, 100%, 66%);
+    --grayishBlue: hsl(217, 19%, 24%);
+    --darkGrayishBlue: hsl(218, 19%, 17%);
+    --fontSize: 18px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: var(--fontSize);
+    background-color: var(--darkGrayishBlue);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+
+.wrapper .card {
+    margin-top: 5rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    background-color: var(--grayishBlue);
+    border-radius: 10px;
+    position: relative;
+    max-width: 75%;
+    width: 95%;
+    box-shadow: 30px 50px 0px 0px rgba(29, 35, 47, 0.7), 15px 30px 0 70px rgba(29, 35, 47, 0.4);
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.wrapper .card .advice_number {
+    color: var(--neonGreen);
+    font-weight: 300;
+    font-size: .8rem;
+    letter-spacing: .2rem;
+    font-weight: 800;
+    padding-top: 10px;
+}
+
+.wrapper .card .advice {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 5%;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 800;
+    opacity: .8;
+}
+.wrapper .card .divider {
+    margin-top: 20px;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-inline-size: 100%;
+}
+.wrapper .card .dice_img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -28px;
+    background: #54ffab;
+    padding: 0.8rem;
+    border-radius: 50%;
+}
+.wrapper .card .dice_img:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 30px 0px #54ffab;
+}
+
+@media only screen and (min-width: 1000px){
+    .wrapper .card {
+        max-width: 50%;
+        width: 30%;
+    }
+}

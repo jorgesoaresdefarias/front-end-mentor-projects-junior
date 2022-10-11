@@ -1,0 +1,34 @@
+@import "../general.css";
+
+.card .top .bar input{
+    -webkit-appearance: none;
+    margin-right: 15px;
+    width: 200px;
+    height: 7px;
+    background: var(--lightGrayishBlueEmptySliderBar);
+    border-radius: 5px;
+    background-image: linear-gradient(var(--softCyan), var(--softCyan));
+    background-size: 30% 100%;
+    background-repeat: no-repeat;
+}   
+
+.card .top .bar input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 30px;
+    width: 30px;
+    background-image: url(../../images/icon-slider.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    background-color: var(--strongCyan);
+    box-shadow: 5px 5px 10px var(--strongCyan);
+}
+.card .top .bar input::-webkit-slider-thumb:hover {
+    background-color: var(--softCyan);
+}
+
+.card .top .bar input::-webkit-slider-runnable-track  {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+}

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+:root {
+    --softCyan: hsl(174, 77%, 80%);
+    --strongCyan: hsl(174, 86%, 45%);
+    --lightGrayishRed: hsl(14, 92%, 95%);
+    --lightRed: hsl(15, 100%, 70%);
+    --paleBlue: hsl(226, 100%, 87%);
+    --whitePricingComponentBackground: hsl (0, 0%, 100%);
+    --veryPaleBlueMainBackground: hsl(230, 100%, 99%);
+    --lightGrayishBlueEmptySliderBar: hsl(224, 65%, 95%);
+    --lightGrayishBlueToggleBackground: hsl(223, 50%, 87%);
+    --grayishBlue: hsl(225, 20%, 60%);
+    --darkDesaturatedBlue: hsl(227, 35%, 25%);
+    --radio-switch-width: 186px;
+    --radio-switch-height: 46px;
+    --radio-switch-padding: 3px;
+    --radio-switch-radius: 50em;
+    --radio-switch-animation-duration: 0.3s;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-image: url(../images/bg-pattern.svg);
+    background-repeat: no-repeat;
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+}
+
+.header {
+    background-image: url(../images/pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 25vh;
+}
+
+.header h1 {
+    font-size: 1.5em;
+    color: var(--darkDesaturatedBlue);
+    padding-top: 3%;
+}
+.header h2 {
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--grayishBlue);
+}

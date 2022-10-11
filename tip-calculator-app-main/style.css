@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;500;700&display=swap');
+
+:root {
+    --strongCyan: hsl(172, 67%, 45%);
+    --veryDarkCyan: hsl(183, 100%, 15%);
+    --darkGrayishCyan1: hsl(186, 14%, 43%);
+    --darkGrayishCyan2: hsl(184, 14%, 56%);
+    --lightGrayishCyan1: hsl(185, 41%, 84%);
+    --lightGrayishCyan2: hsl(189, 41%, 95%);
+    --white: hsl(0, 0%, 100%);
+    --fontSize: 24px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Space Mono', sans-serif;
+    font-size: var(--fontSize);
+    background-color: var(--darkGrayishCyan2);
+    text-align: center;
+}
+.wrapper h1 {
+    margin-top: 10vh;
+    font-weight: 700;
+    letter-spacing: .7rem;
+    font-size: 1.3rem;
+    color: var(--veryDarkCyan);
+}
+
+.wrapper .card {
+    background-color: var(--white);
+    margin-top: 5vh;
+    padding-bottom: 5vh;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: left;
+    padding-left: 5vh;
+    padding-top: 3vh;
+}
+
+.wrapper .card p{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3vh;
+    font-size: .9rem;
+    font-weight: 700;
+    color: var(--darkGrayishCyan1);
+}
+
+.wrapper .card p span{
+    font-size: .8rem;
+    margin-left: auto;
+    margin-right: 2rem;
+    color: red;
+    display: none;
+}
+
+.wrapper .card .bill {
+    font-family: 'Space Mono', sans-serif;
+    font-weight: 700;
+    width: 90%;
+    height: 5vh;
+    border: none;
+    background-color: var(--lightGrayishCyan2);
+    color: var(--darkGrayishCyan1);
+    font-size: 1.3rem;
+    padding-left: 2vh;
+}
+
+.wrapper .card .bill input {
+    font-family: 'Space Mono', sans-serif;
+    font-weight: 700;
+    border: none;
+    background-color: var(--lightGrayishCyan2);
+    color: var(--veryDarkCyan);
+    font-size: 1.3rem;
+    width: 95%;
+    text-align: right;
+}
+.wrapper .card .bill input:focus {
+    outline: 2px solid var(--strongCyan);
+}
+.wrapper .card .button__area {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.wrapper .card .button__area .button {
+    font-family: 'Space Mono', sans-serif;
+    margin-top: 2vh;
+    width: 90%;
+    height: 5vh;
+    border: none;
+    background-color: var(--veryDarkCyan);
+    color: var(--white);
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+.wrapper .card .button__area button:hover {
+    background-color: var(--strongCyan);
+    color: var(--veryDarkCyan);
+}
+
+.wrapper .card .button__area .custom {
+    font-family: 'Space Mono', sans-serif;
+    background-color: var(--lightGrayishCyan2);
+    text-align: right;
+    color: var(--darkGrayishCyan1);
+    outline: 0;
+}
+
+.wrapper .card .button__area .custom::placeholder {
+    color: var(--darkGrayishCyan1);
+    font-weight: 500;
+    margin-right: 2vh;
+}
+
+.wrapper .card .card_result {
+    margin-top: 10%;
+    width: 90%;
+    background-color: var(--veryDarkCyan);
+    border-radius: 10px;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+.wrapper .card .card_result .amount .title__1 {
+    color: var(--white);
+    grid-area: title_1;
+}
+
+.wrapper .card .card_result .amount .title__2 {
+    grid-area: title_2;
+    margin-top: 0;
+}
+
+.wrapper .card .card_result .amount .result {
+    text-align: right;
+    grid-area: result;
+    font-size: 2rem;
+    color: var(--strongCyan);
+    margin-right: 5vh;
+}
+
+.wrapper .card .card_result .amount {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "title_1 result" "title_2 result";
+}
+
+.wrapper .card .card_result button {
+    width: 90%;
+    background-color: var(--strongCyan);
+    border: none;
+    height: 5vh;
+    margin-bottom: 3vh;
+    border-radius: 5px;
+    color: var(--veryDarkCyan);
+    font-weight: 700;
+    font-size: 1rem;
+    margin-top: 3vh;
+}
+
+.wrapper .card .card_result button:hover {
+    background-color: var(--lightGrayishCyan1);
+}
+
+@media only screen and (min-width:1000px) {
+    .wrapper .card{
+        width: 50%;
+        height: 50%;
+        display:flex;
+        flex-direction: row;
+        border-radius: 20px;
+        margin-left: 50vh;
+    }
+    .wrapper .card .card_result {
+        margin-top: 0;
+        width: 40%;
+        height: 90%;
+        margin-left: 6vh;
+    }
+    .wrapper .card .button__area {
+        display: grid;
+        grid-template-columns: 35% 35% 35%;
+    }
+
+    .wrapper .card .button__area .button {
+        width: 95%;
+    }
+    .wrapper .card .bill {
+        width: 100%;
+        
+    }
+    .wrapper .card .bill  input{
+        width: 95%;
+    }
+    .wrapper .card .card_result button{
+        margin-top: 15vh;
+    }
+    .wrapper .card .button__area .custom{
+        font-size: 1rem;
+    }
+}

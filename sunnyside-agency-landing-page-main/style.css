@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+
+
+:root {
+    --softRed: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --darkDesaturatedCyan: hsl(167, 40%, 24%);
+    --darkBlue: hsl(198, 62%, 26%);
+    --darkModerateCyan: hsl(168, 34%, 41%);
+    --veryDarkDesaturatedBlue: hsl(212, 27%, 19%);
+    --veryDarkGrayishBlue: hsl(213, 9%, 39%);
+    --darkGrayishBlue: hsl(232, 10%, 55%);
+    --grayishBlue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+    --fontSize: 18px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+html {
+    font-family: 'Barlow', sans-serif;
+    font-size: var(--fontSize);
+}
+.initial {
+    background-image: url(./images/desktop/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 100vh;
+    background-position: center; 
+}
+.initial .top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.initial .top img {
+    margin: 5vh 0 0 5vh;
+    width: 20vh;
+    height: 5vh;
+}
+.initial .top .menu .menu__desktop {
+    margin: 5vh 5vh 0 0;
+}
+.initial .top .menu .menu__mobile {
+    display: none;
+}
+.initial .top .menu .menu__desktop a, .initial .top .menu .menu__desktop button{
+    cursor: pointer;
+    font-size: 1.5vw;
+    margin-left: 5vh;
+    color: var(--white);
+}
+.initial .top .menu .menu__desktop button{
+    font-family: 'Fraunces', sans-serif;
+    color: var(--veryDarkDesaturatedBlue);
+    width: 20vh;
+    height: 5vh;
+    border-radius: 50px;
+    border: none;
+}
+.initial .top .menu .menu__desktop button:hover{
+    color: var(--white);
+    background-color: var(--veryDarkDesaturatedBlue);
+}
+.initial .bottom {
+    text-align: center;
+    margin-top: 10%;
+}
+.initial .bottom h1 {
+    font-family: 'Fraunces', sans-serif;
+    color: var(--white);
+    font-size: 5vw;
+    letter-spacing: 1vw;
+}
+.initial .bottom img {
+    width: 5vh;
+    margin-top: 10vh;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.one {
+    flex-direction: row-reverse;
+}
+.row .image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    height: 70vh;
+}
+.one .image {
+    background-image: url(./images/desktop/image-transform.jpg);
+}
+.two .image {
+    background-image: url(./images/desktop/image-stand-out.jpg);
+}
+.row .text__wrapper {
+    text-align: left;
+    max-height: 70vh;
+    height: 70vh;
+    width: 50%;
+}
+.row .text__wrapper h1 {
+    margin: 20% 0 0 20%;
+    font-family: 'Fraunces';
+    font-size: 2.4vw; 
+    width: 40%;
+}
+.row .text__wrapper p {
+    font-size: 1vw;
+    margin: 5% 0 5% 20%;
+    width: 60%;
+    line-height: 2vw;
+    color: var(--veryDarkGrayishBlue);
+}
+.row .text__wrapper a {
+    font-family: 'Fraunces';
+    margin-left: 20%;
+    font-size: 1.4vw;
+    color: var(--veryDarkDesaturatedBlue);
+}
+.row .text__wrapper .section {
+    margin-left:20%;
+    background-color: yellow;
+    width: 20vh;
+    height: 1vh;
+    border-radius: 50px;
+    opacity: .3;
+}
+.row .text__wrapper .yellow {
+    background-color: yellow;
+}
+.row .text__wrapper .red {
+    background-color: var(--softRed);
+}
+.row__text__images {
+    display: flex;
+    flex-direction: row;
+}
+.row__text__images .image__text{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 70vh;
+}
+.row__text__images .cherry {
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+}
+.row__text__images .orange {
+    background-image: url(./images/desktop/image-photography.jpg);
+}
+.row__text__images .image__text .text{
+    padding-top: 40%;
+    text-align: center;
+}
+.row__text__images .cherry {
+    color: var(--darkDesaturatedCyan);
+}
+.row__text__images .orange {
+    color: var(--darkBlue);
+}
+.row__text__images .image__text .text h1{
+    font-family: 'Fraunces';
+    font-size: 2vw;
+}
+.row__text__images .image__text .text p {
+    font-size: 1vw;
+    margin: 5% 25% 0 25%;
+    line-height: 2vw;
+}
+.row__clients__wrapper {
+    text-align: center;
+    margin-top: 5%;
+}
+.row__clients__wrapper h1 {
+    font-family: 'Fraunces';
+    font-size: 2vw;
+    font-weight: 900;
+    letter-spacing: .3rem;
+    color: var(--darkGrayishBlue);
+}
+.row__clients__wrapper .card__clients {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.row__clients__wrapper .card__clients .card {
+    width: 30%;
+    height: 50vh;
+    margin-right: 10%;
+
+}
+.row__clients__wrapper .card__clients .card img{
+    border-radius: 50%;
+    width: 20%;
+}
+.row__clients__wrapper .card__clients .card p {
+    font-size: 1vw;
+    margin-top: 10%;
+    color: var(--veryDarkGrayishBlue);
+}
+.row__clients__wrapper .card__clients .card h1 {
+    font-size: 1vw;
+    letter-spacing: 0;
+    margin-top: 10%;
+    color: var(--veryDarkDesaturatedBlue);
+}
+.row__clients__wrapper .card__clients .card h2 {
+    font-size: .7vw;
+    margin-top: 5%;
+    color: var(--grayishBlue);
+}
+.wrapper__images div{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 25%;
+    height: 70vh;
+}
+.wrapper__images {
+    display: flex;
+    flex-direction: row;
+}
+.wrapper__images .milk {
+    background-image: url(./images/desktop/image-gallery-milkbottles.jpg);
+}
+.wrapper__images .orange {
+    background-image: url(./images/desktop/image-gallery-orange.jpg);
+}
+.wrapper__images .ice {
+    background-image: url(./images/desktop/image-gallery-cone.jpg);
+}
+.wrapper__images .sugar {
+    background-image: url(./images/desktop/image-gallery-sugarcubes.jpg);
+}
+.wrapper__social {
+    text-align: center;
+    background-color: var(--darkModerateCyan);
+    width: 100%;
+    height: 50vh;
+}
+.wrapper__social .logo {
+    width: 40vh;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.wrapper__social .wrapper__links {
+    width: 100%;
+}
+.wrapper__social .wrapper__links a{
+    font-size: 1.5vw;  
+    margin: 5%;
+    color: var(--darkDesaturatedCyan);
+}
+.wrapper__social .social {
+    margin-top: 5%;
+}
+.wrapper__social .social img {
+    width: 5vh;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+@media only screen and (max-width:500px){
+    .initial .top .menu .menu__desktop {
+        display: none;
+    }
+    .initial {
+        background-image: url(./images/mobile/image-header.jpg);
+    }
+    .initial .top img {
+        width: 15vh;
+        height: 3vh;
+    }
+    .initial .top .menu .menu__mobile {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 5%;
+        top: 5%;
+    }
+    .initial .top .menu .menu__mobile .line {
+        content: "";
+        width: 3vh;
+        height: .3vh;
+        margin-bottom: .4vh;
+        background-color: white;
+    }
+    .initial .top .menu__mobile__wrapper .triangule {
+        position: absolute;
+        right: 6%;
+        top: 9%;
+        width: 0;
+        height: 0;
+        display: none;
+        border: 10px solid transparent;
+        border-bottom: 10px solid white;
+        border-left: 10px solid white;
+        transform: scaleX(-1);
+    }
+    .initial .top .menu__mobile__wrapper .menu__link {
+        width: 40vh;
+        height: 40vh;
+        position: absolute;
+        right: 6%;
+        top: 12%;
+        background-color: var(--white);
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+    .initial .top .menu__mobile__wrapper .menu__link a,
+    .initial .top .menu__mobile__wrapper .menu__link button {
+        color: var(--darkGrayishBlue);
+        margin-top: 10%;
+    }
+    .initial .top .menu__mobile__wrapper .menu__link button {
+        margin: 10% 20% 0 20%;
+        height: 10vh;
+        font-family: 'Fraunces';
+        border-radius: 50px;
+        border: none;
+        background-color: var(--yellow);
+        color: black;
+    }
+    .initial .bottom h1 {
+        font-size: 10vw;
+        margin-top: 45%;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .row .image {
+        width: 100%;
+        height: 60vh;
+    }
+    .row .text__wrapper {
+        width: 100%;
+        height: 60vh;
+        text-align: center;
+    }
+    .row .text__wrapper h1 {
+        margin: 10% 0 0 0;
+        width: 100%;
+        font-size: 10vw;
+        color: var(--veryDarkDesaturatedBlue);
+    }
+    .row .text__wrapper p {
+        font-size: 4vw;
+        margin: 5% 5% 5% 5%;
+        width: 90%;
+        line-height: 7vw;
+        color: var(--veryDarkGrayishBlue);
+    }
+    .row .text__wrapper a {
+        font-size: 4vw;
+        margin-left: 0;
+        color: var(--veryDarkDesaturatedBlue);
+    }
+    .row .text__wrapper .section {
+        margin-left:35%;
+    }
+    .row__text__images {
+        flex-direction: column;
+    }
+    .row__text__images .image__text {
+        width: 100%;
+    }
+    .row__text__images .image__text .text{
+        margin-top: 30%;
+    }
+    .row__text__images .image__text .text h1{
+        font-size: 7vw;
+    }
+    .row__text__images .image__text .text p {
+        font-size: 4vw;
+        margin: 5% 5% 0 5%;
+        line-height: 6vw;
+    }
+    .row__clients__wrapper h1 {
+        font-size: 4vw;
+    }
+    .row__clients__wrapper .card__clients {
+        flex-direction: column;
+        text-align: center;
+    }
+    .row__clients__wrapper .card__clients .card {
+        width: 100%;
+        height: 50vh;
+    }
+    .row__clients__wrapper .card__clients .card img{
+        border-radius: 50%;
+        width: 20%;
+    }
+    .row__clients__wrapper .card__clients .card p {
+        width: 90%;
+        font-size: 5vw;
+        margin-top: 5%;
+    }
+    .row__clients__wrapper .card__clients .card h1 {
+        font-size: 4vw;
+        letter-spacing: 0;
+        margin-top: 5%;
+    }
+    .row__clients__wrapper .card__clients .card h2 {
+        font-size: 2vw;
+        margin-top: 5%;
+    }
+    .wrapper__images {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .wrapper__images div {
+        width: 100%;
+        height: 30vh;
+    }
+    .wrapper__social .wrapper__links {
+        margin-top: 10vh;
+    }
+    .wrapper__social .wrapper__links a{
+        font-size: 5vw;
+    }
+    .wrapper__social .social {
+        margin-top: 10vh;
+    }
+}

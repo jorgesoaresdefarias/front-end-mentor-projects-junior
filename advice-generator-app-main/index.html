@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Advice generator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; color: white;}
+    .attribution a { color: hsl(150, 100%, 66%); }
+  </style>
+</head>
+<body>
+
+  <main class="wrapper">
+    <div class="card">
+      <p class="advice_number">ADVICE #0</p>
+      <p class="advice">"Roll the dice to start."</p>
+        <img class="divider" src="./images/pattern-divider-mobile.svg" alt="">
+        <img class="dice_img" onclick="searchAdvice()" src="./images/icon-dice.svg" alt="">
+    </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Jorge Soares</a>.
+  </div>
+</body>
+<script src="./main.js"></script>
+</html>

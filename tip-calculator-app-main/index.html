@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main class="wrapper">
+    <h1>SPLI<br>TTER</h1>
+    <div class="card">
+      <div class="di">
+        <p>Bill <span class="bill__span">Can't be zero</span></p>
+      <div class="bill">$<input class="bill__val" type="number" onblur="doCalc()"></div>
+      <p>Select Tip %</p>
+      <div class="button__area">
+        <button class="button" type="submit" onclick="set(5)">5%</button>
+        <button class="button" type="submit" onclick="set(10)">10%</button>
+        <button class="button" type="submit" onclick="set(15)">15%</button>
+        <button class="button" type="submit" onclick="set(25)">25%</button>
+        <button class="button" type="submit" onclick="set(50)">50%</button>
+        <input class="button custom" type="number" placeholder="Custom">
+      </div>
+      <p>Number of People <span class="number__span">Can't be zero</span></p>
+      <div class="bill"><img src="./images/icon-person.svg"><input class="number__people" type="number" onblur="doCalc()"></div>
+      </div>
+
+      <div class="card_result">
+        <div class="amount">
+          <p class="title__1">Tip Amount</p>
+          <p class="result tip">$0.00</p>
+          <p class="title__2">/ person</p>
+        </div>
+
+        <div class="amount">
+          <p class="title__1">Total</p>
+          <p class="result total">$0.00</p>
+          <p class="title__2">/ person</p>
+        </div>
+
+        <button type="submit" onclick="reset()">RESET</button>
+
+      </div>
+
+    </div>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+<script src="./main.js"></script>
+</html>

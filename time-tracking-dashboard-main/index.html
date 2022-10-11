@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { margin-top: 20%;font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="wrapper">
+    
+    <div class="personal__card">
+      <div class="top">
+        <img src="./images/image-jeremy.png">
+        <div class="text">
+          <p>Report for</p>
+          <h1>Jeremy Robson</h1>
+        </div>
+      </div>
+      <div class="bottom">
+        <button id="daily" onclick="daily()">Daily</button>
+        <button id="weekly" onclick="weekly()" type="submit">Weekly</button>
+        <button id="monthly" onclick="monthly()" type="submit">Monthly</button>
+      </div>
+    </div>
+    
+    <div class="regular work">
+      <div class="property__card">
+        <div class="row">
+          <div class="title">Work</div>
+          <div class="hours" id="work_hours">32hrs</div>
+        </div>
+        <div class="row__2">
+          <img src="./images/icon-ellipsis.svg" alt="">
+          <div class="description" id="work_description">Last Week - 36hrs</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="regular play">
+      <div class="property__card">
+        <div class="row">
+          <div class="title">Play</div>
+          <div class="hours" id="play_hours">32hrs</div>
+        </div>
+        <div class="row__2">
+          <img src="./images/icon-ellipsis.svg" alt="">
+          <div class="description" id="play_description">Last Week - 36hrs</div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="regular study">
+      <div class="property__card">
+        <div class="row">
+          <div class="title">Study</div>
+          <div class="hours" id="study_hours">32hrs</div>
+        </div>
+        <div class="row__2">
+          <img src="./images/icon-ellipsis.svg" alt="">
+          <div class="description" id="study_description">Last Week - 36hrs</div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="regular exercise">
+      <div class="property__card">
+        <div class="row">
+          <div class="title">Exercise</div>
+          <div class="hours" id="exercise_hours">32hrs</div>
+        </div>
+        <div class="row__2">
+          <img src="./images/icon-ellipsis.svg" alt="">
+          <div class="description" id="exercise_description">Last Week - 36hrs</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="regular social">
+      <div class="property__card">
+        <div class="row">
+          <div class="title">Social</div>
+          <div class="hours" id="social_hours">32hrs</div>
+        </div>
+        <div class="row__2">
+          <img src="./images/icon-ellipsis.svg" alt="">
+          <div class="description" id="social_description">Last Week - 36hrs</div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="regular self__care">
+      <div class="property__card">
+        <div class="row">
+          <div class="title">Self Care</div>
+          <div class="hours" id="self_care_hours">32hrs</div>
+        </div>
+        <div class="row__2">
+          <img src="./images/icon-ellipsis.svg" alt="">
+          <div class="description" id="self_care_description">Last Week - 36hrs</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+<script src="main.js"></script>
+</html>

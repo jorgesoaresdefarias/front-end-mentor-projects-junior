@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root {
+    --blue: hsl(246, 80%, 60%);
+    --lightRedWork: hsl(15, 100%, 70%);
+    --softBluePlay: hsl(195, 74%, 62%);
+    --lightRedStudy : hsl(348, 100%, 68%);
+    --limeGreenExercise: hsl(145, 58%, 55%);
+    --violetSocial: hsl(264, 64%, 52%);
+    --softOrangeSelfCare: hsl(43, 84%, 65%);
+    --veryDarkBlue: hsl(226, 43%, 10%);
+    --darkBlue: hsl(235, 46%, 20%);
+    --desaturatedBlue: hsl(235, 45%, 61%);
+    --paleBlue: hsl(236, 100%, 87%);
+    --fontSize: 18px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--veryDarkBlue);
+    font-family: 'Rubik', sans-serif;
+    font-size: var(--fontSize);
+}
+
+.wrapper {
+    text-align: center;
+    max-width: 90%;
+    margin-left: 5%;
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2rem;
+}
+
+.wrapper .personal__card {
+    grid-area: personal;
+    background-color: var(--darkBlue);
+    width: 100%;
+    height: 30vh;
+    border-radius: 10px;
+}
+
+.wrapper .personal__card .top {
+    background-color: var(--blue);
+    height: 20vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper .personal__card .top img {
+    border: 2px solid white;
+    border-radius: 50%;
+    max-width: 50%;
+    max-height: 50%;
+    margin-top: 5vh;
+    margin-left: 3vh;
+}
+
+.wrapper .personal__card .top .text {
+    margin-top: 6vh;
+    margin-left: 2vh;
+    text-align: left;
+}
+.wrapper .personal__card .top .text p{
+    font-size: .8rem;
+    color: var(--paleBlue);
+}
+
+.wrapper .personal__card .top .text h1 {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 300;
+}
+
+.wrapper .personal__card .bottom {
+    margin-top: 3vh;
+    margin-left: 6vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper .personal__card .bottom button {
+    cursor: pointer;
+    border: none;
+    background-color: var(--darkBlue);
+    color: var(--paleBlue);
+    margin-right: 7vh;
+    font-size: 1.2rem;
+}
+
+.wrapper .personal__card .bottom button:hover {
+    color: white;
+}
+
+.wrapper .regular {
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 92% -1rem;
+    width: 100%;
+    border-radius: 10px;
+}
+.wrapper .regular .property__card {
+    background-color: var(--darkBlue);    
+    margin-top: 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    height: 20vh;
+}
+.wrapper .regular .property__card:hover{
+    background-color: var(--desaturatedBlue);
+}
+
+.wrapper .regular .property__card .row {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5vh;
+    margin-top: 4vh;
+    text-align: left;
+}
+
+.wrapper .regular .property__card .row .title {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+}
+.wrapper .regular .property__card .row .hours{
+    margin-top: 1vh;
+    font-size: 2rem;
+    color: white;
+    font-weight: 300;
+}
+
+.wrapper .regular .property__card .row__2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6vh;
+    margin-left: 20%;
+    margin-right: 5%;
+    position: absolute;
+    right: 10%;
+}
+.wrapper .regular .property__card .row__2 img {
+    cursor: pointer;
+    max-width: 20%;
+    margin-left: 80%;
+}
+.wrapper .regular .property__card .row__2 img:hover{
+    filter: brightness(5);
+}
+.wrapper .regular .property__card .row__2 .description {
+    margin-top: 4vh;
+    color: var(--paleBlue);
+    font-size: 1rem;
+}
+
+.wrapper .work {
+    grid-area: work;
+    background-color: var(--lightRedWork);
+    background-image: url(./images/icon-work.svg);
+}
+
+.wrapper .play {
+    grid-area: play;
+    background-color: var(--softBluePlay);
+    background-image: url(./images/icon-play.svg);
+}
+
+.wrapper .study {
+    grid-area: study;
+    background-color: var(--lightRedStudy);
+    background-image: url(./images/icon-study.svg);
+}
+
+.wrapper .exercise {
+    grid-area: exercise;
+    background-color: var(--limeGreenExercise);
+    background-image: url(./images/icon-exercise.svg);
+}
+
+.wrapper .social {
+    grid-area: social;
+    background-color: var(--violetSocial);
+    background-image: url(./images/icon-social.svg);
+}
+
+.wrapper .self__care {
+    grid-area: selfCare;
+    background-color: var(--softOrangeSelfCare);
+    background-image: url(./images/icon-self-care.svg);
+}
+
+@media only screen and (min-width: 1000px){
+    .wrapper {
+        display: grid;
+        grid-template: 
+        "personal work play study" 
+        "personal exercise social selfCare";
+        max-width: 100%;
+        margin-left: 0;
+    }
+    .wrapper .personal__card {
+        width: 100%;
+        height: 71vh;
+        margin-left: 0;
+    }
+    .wrapper .personal__card .top {
+        height: 70%;
+        flex-direction: column;
+    }
+    .wrapper .personal__card .bottom {
+        flex-direction: column;
+        margin: 0;
+        justify-content: none;
+        margin-left: 3vh;
+    }
+    .wrapper .personal__card .bottom button {
+        text-align: left;
+        margin-top: 3vh;
+        font-size: .9rem;
+    }
+    .wrapper .personal__card .top img {
+        max-width: 30%;
+    }
+    .wrapper .personal__card .top .text h1 {
+        width: 80%;
+        font-size: 2rem;
+    }
+    .wrapper .regular {
+        margin: 0;
+        padding: 0;
+        width: 35vh;
+        height: 33vh;
+    }
+    .wrapper .regular .property__card{
+        height: 29vh;
+    }
+    .wrapper .regular .property__card .row .title{
+        font-size: .9rem;
+    }
+    .wrapper .regular .property__card .row .hours {
+        margin-top: 5vh;
+        font-size: 3rem;
+    }
+    .wrapper .regular .property__card .row__2 {
+        position: relative;
+    }
+    .wrapper .regular .property__card .row__2 .description {
+        font-size: .7rem;
+        text-align: left;
+        width: 650%;
+        position: absolute;
+        top: 12vh;
+        right: 2rem;
+    }
+    .wrapper .regular .property__card .row__2 img{
+        max-width: 50vh;
+        margin: 0;
+    }
+}
