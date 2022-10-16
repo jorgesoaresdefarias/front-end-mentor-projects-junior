@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+:root {
+    --softRed:hsl(10, 79%, 65%);
+    --cyan:hsl(186, 34%, 60%);
+    --darkBrown:hsl(25, 47%, 15%);
+    --mediumBrown:hsl(28, 10%, 53%);
+    --cream:hsl(27, 66%, 92%);
+    --veryPaleOrange:hsl(33, 100%, 98%);
+    --fontSize: 18px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+li {
+    list-style: none;
+}
+button {
+    cursor: pointer;    
+}
+
+body {
+    background-color: var(--cream);
+    font-family: 'DM Sans', sans-serif;
+    font-size: var(--fontSize);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+
+.wrapper {
+    margin-top: 5rem;
+    text-align: center;
+    border-radius: 10px;
+    border-radius: 10px;
+    position: relative;
+    max-width: 75%;
+    width: 30%;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.wrapper .top__wrapper {
+    text-align: left;
+    height: 13vh;
+    border-radius: 10px;
+    background-color: var(--softRed);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.wrapper .top__wrapper .left__side{
+    color: var(--veryPaleOrange);
+    padding: 20px 0 0 20px;
+}
+
+.wrapper .top__wrapper .left__side .title__top {
+    font-size: 12px;
+    padding: 0 0 10px 0;
+}
+
+.wrapper .top__wrapper .left__side .price__top {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.wrapper .top__wrapper .right__side {
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper .top__wrapper .right__side .circle__1{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--veryPaleOrange);
+    margin-right: 8vh;
+    margin-top: 3vh;
+    z-index: 1;
+}
+
+.wrapper .top__wrapper .right__side .circle__2{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border-style: solid;
+    background-color: black;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.wrapper .bottom__wrapper {
+    margin-top: 20px;
+    height: 50vh;
+    border-radius: 10px;
+    background-color: var(--veryPaleOrange);
+    text-align: left;
+    padding: 3vh 0 0 5vh; 
+}
+.wrapper .bottom__wrapper .title {  
+    color: var(--darkBrown);
+    font-weight: 700;
+    font-size: 23px;
+}
+
+.wrapper .bottom__wrapper .wrapper_chart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-right: 20px;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+.wrapper .bottom__wrapper .wrapper_chart .chart {
+    width: 5vh;
+    height: 10vh;
+    border-radius: 7px;
+    background-color: var(--softRed);
+}
+.wrapper .bottom__wrapper .wrapper_chart .msg{
+    position: absolute;
+    border-radius: 5px;
+    width: 7vh;
+    height: 3vh;
+    background-color: var(--darkBrown);
+    text-align: center;
+    display: none;
+}
+.wrapper .bottom__wrapper .wrapper_chart .msg p {
+    color: var(--veryPaleOrange);
+    font-size: 12px;
+}
+.wrapper .bottom__wrapper .wrapper_chart .mon .chart{
+    height: 5vh;
+}
+.wrapper .bottom__wrapper .wrapper_chart .mon .msg {
+    top: 40vh;
+    left: 4vh;
+}
+
+.wrapper .bottom__wrapper .wrapper_chart .tue .msg {
+    top: 35vh;
+    left: 12vh;
+}
+
+.wrapper .bottom__wrapper .wrapper_chart .wed .msg {
+    top: 30vh;
+    left: 20vh;
+}
+
+.wrapper .bottom__wrapper .wrapper_chart .thu .msg {
+    top: 35vh;
+    left: 28vh;
+}
+
+.wrapper .bottom__wrapper .wrapper_chart .fri .msg {
+    top: 37vh;
+    left: 36vh;
+}
+
+.wrapper .bottom__wrapper .wrapper_chart .sat .msg {
+    top: 32vh;
+    left: 44vh;
+}
+
+.wrapper .bottom__wrapper .wrapper_chart .sun .msg {
+    top: 36vh;
+    left: 53vh;
+}
+.wrapper .bottom__wrapper .wrapper_chart .mon .chart:hover{
+    background-color: hsla(10, 79%, 65%, 0.658);
+}
+
+.wrapper .bottom__wrapper .wrapper_chart .tue .chart{
+    height: 10vh;
+}
+
+.wrapper .bottom__wrapper .wrapper_chart .tue .chart:hover{
+    background-color: hsla(10, 79%, 65%, 0.658);
+}
+
+.wrapper .bottom__wrapper .wrapper_chart .wed .chart{
+    height: 15vh;
+    background-color: var(--cyan);
+}
+
+.wrapper .bottom__wrapper .wrapper_chart .wed .chart:hover{
+    background-color: hsla(186, 34%, 60%, 0.74);
+}
+
+.wrapper .bottom__wrapper .wrapper_chart .thu .chart{
+    height: 10vh;
+}
+
+.wrapper .bottom__wrapper .wrapper_chart .thu .chart:hover{
+    background-color: hsla(10, 79%, 65%, 0.658);
+}
+
+.wrapper .bottom__wrapper .wrapper_chart .fri .chart{
+    height: 8vh;
+}
+
+.wrapper .bottom__wrapper .wrapper_chart .fri .chart:hover{
+    background-color: hsla(10, 79%, 65%, 0.658);
+}
+
+.wrapper .bottom__wrapper .wrapper_chart .sat .chart{
+    height: 13vh;
+}
+
+.wrapper .bottom__wrapper .wrapper_chart .sat .chart:hover{
+    background-color: hsla(10, 79%, 65%, 0.658);
+}
+
+.wrapper .bottom__wrapper .wrapper_chart .sun .chart{
+    height: 9vh;
+}
+
+.wrapper .bottom__wrapper .wrapper_chart .sun .chart:hover{
+    background-color: hsla(10, 79%, 65%, 0.658);
+}
+
+.wrapper .bottom__wrapper .wrapper_chart p {
+    text-align: center;
+    font-size: 12px;
+    color: var(--mediumBrown);
+}
+.wrapper .bottom__wrapper .divider {
+    background-color: var(--cream);
+    width: 95%;
+    height: 1px;
+}
+
+.wrapper .bottom__wrapper .price__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-top: 3vh;
+}
+
+.wrapper .bottom__wrapper .price__wrapper .right {
+    text-align: right;
+}
+
+.wrapper .bottom__wrapper .price__wrapper .left .total{
+    font-size: 12px;
+    color: var(--mediumBrown);
+}
+
+.wrapper .bottom__wrapper .price__wrapper .left .price__bottom{
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--darkBrown);
+}
+
+.wrapper .bottom__wrapper .price__wrapper .right .porcentage{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--darkBrown);
+    margin-top: 10px;
+}
+
+.wrapper .bottom__wrapper .price__wrapper .right .subtitle{
+    font-size: 12px;
+    color: var(--mediumBrown);
+}

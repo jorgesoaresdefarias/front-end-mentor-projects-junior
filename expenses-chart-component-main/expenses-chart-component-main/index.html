@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <div class="top__wrapper">
+      <div class="left__side">
+        <p class="title__top">My balance</p>
+        <p class="price__top">$921.48</p>
+      </div>
+      <div class="right__side">
+        <div class="circle__1"></div>
+        <div class="circle__2"></div>
+      </div>
+    </div>
+
+    <div class="bottom__wrapper">
+      <p class="title">Spending - Last 7 days</p>
+      <div class="wrapper_chart">
+        <div class="mon">
+          <div class="msg">
+            <p>$52.36</p></div>
+          <div class="chart">
+          </div>
+          <p>mon</p>
+        </div>
+        <div class="tue">
+          <div class="msg">
+            <p>$52.36</p></div>
+          <div class="chart"></div>
+          <p>tue</p>
+        </div>
+        <div class="wed">
+          <div class="msg">
+            <p>$52.36</p></div>
+        <div class="chart"></div>
+        <p>wed</p>
+        </div>
+        <div class="thu">
+          <div class="msg">
+            <p>$31.07</p></div>
+          <div class="chart"></div>
+          <p>thu</p>
+        </div>
+        <div class="fri">
+          <div class="msg">
+            <p>$52.36</p></div>
+          <div class="chart"></div>
+          <p>fri</p>
+        </div>
+        <div class="sat">
+          <div class="msg">
+            <p>$52.36</p></div>
+          <div class="chart"></div>
+          <p>sat</p>
+        </div>
+        <div class="sun">
+          <div class="msg">
+            <p>$52.36</p></div>
+          <div class="chart"></div>
+          <p>sun</p>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="price__wrapper">
+        <div class="left">
+          <p class="total">Total this month</p>
+          <p class="price__bottom">$478.33</p>
+        </div>
+        <div class="right">
+          <p class="porcentage">+2.4%</p>
+          <p class="subtitle">from last month</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
+
+<script>
+  const chart_mon = document.querySelector('.wrapper .bottom__wrapper .wrapper_chart .mon .chart');
+  const msg_mon = document.querySelector('.wrapper .bottom__wrapper .wrapper_chart .mon .msg')
+  chart_mon.addEventListener('mouseover', () => {
+    msg_mon.style.display = 'block';
+  });
+  chart_mon.addEventListener('mouseout',() => {
+    msg_mon.style.display = 'none';
+  })
+
+
+  const chart_tue = document.querySelector('.wrapper .bottom__wrapper .wrapper_chart .tue .chart');
+  const msg_tue = document.querySelector('.wrapper .bottom__wrapper .wrapper_chart .tue .msg')
+  chart_tue.addEventListener('mouseover', () => {
+    msg_tue.style.display = 'block';
+  });
+  chart_tue.addEventListener('mouseout',() => {
+    msg_tue.style.display = 'none';
+  })
+
+  const chart_wed = document.querySelector('.wrapper .bottom__wrapper .wrapper_chart .wed .chart');
+  const msg_wed = document.querySelector('.wrapper .bottom__wrapper .wrapper_chart .wed .msg')
+  chart_wed.addEventListener('mouseover', () => {
+    msg_wed.style.display = 'block';
+  });
+  chart_wed.addEventListener('mouseout',() => {
+    msg_wed.style.display = 'none';
+  })
+
+  const chart_thu = document.querySelector('.wrapper .bottom__wrapper .wrapper_chart .thu .chart');
+  const msg_thu = document.querySelector('.wrapper .bottom__wrapper .wrapper_chart .thu .msg')
+  chart_thu.addEventListener('mouseover', () => {
+    msg_thu.style.display = 'block';
+  });
+  chart_thu.addEventListener('mouseout',() => {
+    msg_thu.style.display = 'none';
+  })
+
+  const chart_fri = document.querySelector('.wrapper .bottom__wrapper .wrapper_chart .fri .chart');
+  const msg_fri = document.querySelector('.wrapper .bottom__wrapper .wrapper_chart .fri .msg')
+  chart_fri.addEventListener('mouseover', () => {
+    msg_fri.style.display = 'block';
+  });
+  chart_fri.addEventListener('mouseout',() => {
+    msg_fri.style.display = 'none';
+  })
+
+  const chart_sat = document.querySelector('.wrapper .bottom__wrapper .wrapper_chart .sat .chart');
+  const msg_sat = document.querySelector('.wrapper .bottom__wrapper .wrapper_chart .sat .msg')
+  chart_sat.addEventListener('mouseover', () => {
+    msg_sat.style.display = 'block';
+  });
+  chart_sat.addEventListener('mouseout',() => {
+    msg_sat.style.display = 'none';
+  })
+
+  const chart_sun = document.querySelector('.wrapper .bottom__wrapper .wrapper_chart .sun .chart');
+  const msg_sun = document.querySelector('.wrapper .bottom__wrapper .wrapper_chart .sun .msg')
+  chart_sun.addEventListener('mouseover', () => {
+    msg_sun.style.display = 'block';
+  });
+  chart_sun.addEventListener('mouseout',() => {
+    msg_sun.style.display = 'none';
+  })
+</script>
