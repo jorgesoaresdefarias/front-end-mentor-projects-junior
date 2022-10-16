@@ -9,6 +9,9 @@ Um conjunto de projetos de Front-end baseados nos desafios do site:
 ### 📄 Advice Generator App
 <img src="https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_700/Challenges/sfl8uqvq75wnnr559ksp.jpg" alt="Advice Generator App"/>
 
+### 📄 Expenses Chart Component
+<img src="https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto:good,w_900/Challenges/qqz8vfg0jzmrtk2liteo.jpg" alt="Expenses Chart Component"/>
+
 ### 📄 Blogr Landing Page
 <img src="https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_700/Challenges/wdor1bppurckam2nrhwn.jpg" alt="Blogr Landing Page"/>
 
