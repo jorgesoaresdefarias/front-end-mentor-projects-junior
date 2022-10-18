@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="left__side">
+      <div class="card__front">
+        <div class="wrapper__circle">
+          <div class="circle__fill"></div>
+          <div class="circle__not__filled"></div>
+        </div>
+        <div class="number" id="numero_cartao">1234 56780 9123 0000</div>
+       <div class="bottom__front__card">
+        <div class="name" id="nome_cartao">Jane Appleseed</div>
+        <div class="date">
+          <p id="value_month">MM</p>
+          <p>/</p>
+          <p id="value_year">YY</p>
+        </div>
+       </div>
+      </div>
+      <div class="card__back">
+        <div class="number" id="cvc_number">123</div>
+      </div>
+    </div>
+
+    <div class="right__side">
+      <div class="form" id="form">
+
+        <p>Cardholder Name</p>
+        <input type="text" class="card__name" name="" id="card_name" placeholder="e.g. Jane Appleseed">
+        
+        <p>Card Number</p>
+        <input type="number" class="card__number" name="" onchange="teste()" id="card_number" placeholder="e.g. 1234 5678 9123 0000">
+
+        <div class="bottom__inputs">
+          <div class="date">
+            <p>Exp. Date (MM/YY)</p>
+            <input type="number" class="month" name="" id="month" placeholder="MM">
+            <input type="number" class="year" name="" id="year" placeholder="YY">
+          </div>
+          <div class="cvc">
+              <p>CVC</p>
+              <input type="number" class="cvc2" name="" id="cvc" placeholder="e.g. 123">
+          </div>
+        </div>
+
+        <button onclick="confirm()">Confirm</button>
+      </div>
+
+      <div class="confirm" id="confirm">
+        <div class="icon"><img src="/images/icon-complete.svg" alt=""></div>
+        <p class="title">Thank You!</p>
+        <p class="subtitle">We've added your card details</p>
+        <button onclick="contin()">Continue</button>
+      </div>
+    </div>
+
+  </div>
+  
+</body>
+</html>
+<script>
+  const number = document.getElementById('card_number');
+  const card_number = document.getElementById('numero_cartao');
+
+  const name = document.getElementById('card_name');
+  const card_name = document.getElementById('nome_cartao');
+
+  const cvc = document.getElementById('cvc');
+  const cvc_number = document.getElementById('cvc_number');
+
+
+  const inputMonth = document.getElementById('month');
+  const month = document.getElementById('value_month');
+
+  const inputYear = document.getElementById('year');
+  const year = document.getElementById('value_year');
+
+  inputMonth.onchange = function() {
+    if(inputMonth.value.length>2 || inputMonth.value.length == 0) {
+      inputMonth.style.outline = "1px solid red";
+    } else if (inputMonth.value.length == 1){
+      month.textContent = "0"+inputMonth.value;
+    } else {
+      month.textContent = inputMonth.value;
+    }
+  }
+
+  inputYear.onchange = function() {
+    if(inputYear.value.length>2 || inputYear.value.length == 0) {
+      inputYear.style.outline = "1px solid red";
+    } else if (inputYear.value.length == 1){
+      year.textContent = "0"+inputYear.value;
+    } else {
+      year.textContent = inputYear.value;
+    }
+  }
+
+  number.onchange = function() {
+    if(number.value.length >16 || number.value.length  == 0) {
+      number.style.outline = "1px solid red";
+    } else {
+      if(number.value.length < 16) {
+      var val = 16 - number.value.length
+      var final = "0".repeat(val) + number.value;
+      card_number.textContent = final.substring(0,4)+ " " + final.substring(4,8) + " " + final.substring(8,12)+ " " + final.substring(12,16);
+    }else {
+      card_number.textContent = number.value.substring(0,4)+ " " + number.value.substring(4,8) + " " + number.value.substring(8,12)+ " " + number.value.substring(12,16);;
+    }
+    }
+  }
+
+  cvc.onchange = function() {
+    if(cvc.value.length >3 || cvc.value.length == 0){
+      cvc.style.outline = "1px solid red";
+    }else {
+      cvc_number.textContent = cvc.value;
+    }
+  }
+
+  name.onchange = function() {
+    if(name.value.length == 0){
+      name.style.outline = "1px solid red";
+    }else {
+      card_name.textContent = name.value;
+    }
+  }
+
+  const form = document.getElementById();
+
+  function confirm(){
+    const form = document.getElementById('form');
+    const confirmform = document.getElementById('confirm');
+
+    form.style.display = 'none';
+    confirmform.style.display = 'block';
+  }
+
+  function contin(){
+    const form = document.getElementById('form');
+    const confirmform = document.getElementById('confirm');
+
+    form.style.display = 'block';
+    confirmform.style.display = 'none';
+  }
+  
+</script>

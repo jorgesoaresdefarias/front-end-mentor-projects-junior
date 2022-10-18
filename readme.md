@@ -33,6 +33,10 @@ Um conjunto de projetos de Front-end baseados nos desafios do site:
 ### 📄 Tip Calculator App
 <img src="https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_700/Challenges/hxkpctp6cd1meeytfdl2.jpg" alt="Tip Calculator App"/>
 
+### 📄 Interactive card details form
+<img src="https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto:good,w_900/Challenges/o5wnlelbwhhjcmbjnq62.jpg" alt="Interactive card details form"/>
+
+
 ## ✒️ Autores
 
 Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início

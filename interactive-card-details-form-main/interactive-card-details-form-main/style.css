@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+:root {
+    --linearGradient1: hsl(249, 99%, 64%);
+    --linearGradient2:hsl(278, 94%, 30%);
+    --red: hsl(0, 100%, 66%);
+    --white: hsl(0, 0%, 100%);
+    --lightGrayishViolet: hsl(270, 3%, 87%);
+    --darkGrayishViolet: hsl(279, 6%, 55%);
+    --veryDarkViolet: hsl(278, 68%, 11%);
+    --fontSize: 18px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Grotesk', sans-serif;
+}
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper .left__side {
+    width: 30%;
+    height: 100vh;
+    background-image: url(/images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper .left__side .card__front {
+    color: var(--white);
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    background-size: 350px 200px;
+    background-image: url(/images/bg-card-front.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 20vh;
+    left: 20vh;
+}
+
+.wrapper .left__side .card__front .number {
+    padding-top: 15vh;
+    padding-left: 5vh;
+    font-size: 20px;
+    letter-spacing: 0.2rem;
+}
+
+
+.wrapper .left__side .card__front .wrapper__circle {
+    position: absolute;
+    margin-top: 4vh;
+    margin-left: 4vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper .left__side .card__front .wrapper__circle .circle__fill {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--white);
+}
+
+.wrapper .left__side .card__front .wrapper__circle .circle__not__filled {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--white);
+    margin-left: 2vh;
+    margin-top: 1vh;
+}
+
+.wrapper .left__side .card__front .bottom__front__card {
+    display: flex;
+    flex-direction: row;
+    padding-left: 5vh;
+    padding-top: 3vh;
+    padding-right: 5.1vh;
+    font-size: 12px;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    justify-content: space-between;
+}
+
+.wrapper .left__side .card__front .bottom__front__card .date {
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper .left__side .card__back {
+    color: var(--white);
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    background-size: 350px 200px;
+    background-image: url(/images/bg-card-back.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 55vh;
+    left: 30vh;
+}
+
+.wrapper .left__side .card__back .number {
+    padding-top: 13.5vh;
+    padding-left: 42vh;
+    font-size: 12px;
+    letter-spacing: 0.2rem;
+}
+
+.wrapper .right__side .form {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.1rem;
+    position: absolute;
+    text-align: left;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    width: 50%;
+}
+
+.wrapper .right__side .form p {
+    color: var(--veryDarkViolet);
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.wrapper .right__side .form input {
+    width: 50%;
+    height: 5vh;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: var(--lightGrayishViolet);
+    border-width: 1px;
+    color: var(--veryDarkViolet);
+    padding-left: 1vh;
+}
+
+.wrapper .right__side .form .bottom__inputs {
+    display:flex;
+    flex-direction: row;
+}
+
+.wrapper .right__side .form .bottom__inputs .date input {
+    width: 20%;
+}
+
+.wrapper .right__side .form .bottom__inputs .cvc {
+    position: absolute;
+    left: 29vh;
+}
+
+.wrapper .right__side .form .bottom__inputs .cvc input {
+    width: 83%;
+}
+
+.wrapper .right__side .form button {
+    width: 51%;
+    margin-top: 5vh;
+    border: none;
+    background-color: var(--veryDarkViolet);
+    color: var(--lightGrayishViolet);
+    font-weight: bold;
+    height: 7vh;
+    border-radius: 10px;
+}
+
+.wrapper .right__side .form button:hover{
+    background-color: hsl(278, 34%, 38%);
+}
+
+.wrapper .right__side .confirm {
+    display: none;
+    font-size: 12px;
+    letter-spacing: 0.1rem;
+    position: absolute;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    width: 50%;
+}
+
+.wrapper .right__side .confirm .icon{
+    width: 80px;
+    height: 80px;
+    margin-left: 45vh;
+    border-radius: 100%;
+    background-image: linear-gradient(to bottom,var(--linearGradient1), var(--linearGradient2));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.wrapper .right__side .confirm .title{
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 0.2rem;
+    color: var(--veryDarkViolet);
+    margin-top: 3vh;
+    font-weight: bolder;
+}
+
+.wrapper .right__side .confirm .subtitle{
+    font-size: 12px;
+    color: var(--darkGrayishViolet);
+    margin-top: 3vh;
+}
+
+.wrapper .right__side .confirm button{
+    width: 45%;
+    height: 7vh;
+    background-color: var(--veryDarkViolet);
+    border: none;
+    margin-top: 5vh;
+    color: var(--lightGrayishViolet);
+    border-radius: 10px;
+}
+
+.wrapper .right__side .confirm button:hover{
+    background-color: hsl(278, 34%, 38%);
+}
+
+@media only screen and (max-width: 1000px){
+    
+    .wrapper .left__side {
+        width: 100%;
+        height: 40vh;
+    }
+    
+    .wrapper .left__side .card__front {
+        position: absolute;
+        width: 300px;
+        height: 200px;
+        background-size: 300px 150px;
+        top: 25vh;
+        left: 3vh;
+        z-index: 1;
+    }
+    
+    .wrapper .left__side .card__front .number {
+        padding-top: 14vh;
+        padding-left: 5vh;
+        font-size: 15px;
+        letter-spacing: 0.2rem;
+    }
+    
+    
+    .wrapper .left__side .card__front .wrapper__circle {
+        margin-top: 7vh;
+        margin-left: 4vh;
+    }
+    
+    .wrapper .left__side .card__front .wrapper__circle .circle__fill {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .wrapper .left__side .card__front .wrapper__circle .circle__not__filled {
+        width: 10px;
+        height: 10px;
+    }
+    
+    .wrapper .left__side .card__front .bottom__front__card {
+        padding-left: 5vh;
+        padding-top: 3vh;
+        padding-right: 5.1vh;
+        font-size: 12px;
+    }
+    
+    .wrapper .left__side .card__front .bottom__front__card .date {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .wrapper .left__side .card__back {
+        position: absolute;
+        width: 300px;
+        height: 200px;
+        background-size: 300px 150px;
+        top: 10vh;
+        left: 8vh;
+    }
+    
+    .wrapper .left__side .card__back .number {
+        position: absolute;
+        right: 5vh;
+        font-size: 12px;
+        letter-spacing: 0.2rem;
+    }
+    
+    .wrapper .right__side .form {
+        font-size: 12px;
+        position: absolute;
+        left: 3vh;
+        top: 55vh;
+        width: 94%;
+    }
+    
+    .wrapper .right__side .form p {
+        margin-top: 3vh;
+        margin-bottom: 1vh;
+        font-size: 15px;
+    }
+    
+    .wrapper .right__side .form input {
+        width: 90%;
+    }
+    
+    .wrapper .right__side .form .bottom__inputs {
+        display:flex;
+        flex-direction: row;
+    }
+    
+    .wrapper .right__side .form .bottom__inputs .cvc input {
+        width: 79%;
+    }
+    
+    .wrapper .right__side .form button {
+        width: 95%;
+    }
+    
+    
+    .wrapper .right__side .confirm {
+        display: none;
+        position: absolute;
+        text-align: center;
+        position: absolute;
+        left: 10%;
+        top: 60%;
+        width: 80%;
+    }
+    
+    .wrapper .right__side .confirm .icon{
+        margin-left: 17vh;
+    }
+    
+    .wrapper .right__side .confirm .title{
+        font-size: 25px;
+    }
+    
+    .wrapper .right__side .confirm .subtitle{
+        font-size: 15px;
+    }
+    
+    .wrapper .right__side .confirm button{
+        width: 90%;
+    }
+}
