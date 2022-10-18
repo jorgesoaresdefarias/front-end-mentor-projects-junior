@@ -36,6 +36,10 @@ Um conjunto de projetos de Front-end baseados nos desafios do site:
 ### 📄 Interactive card details form
 <img src="https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto:good,w_900/Challenges/o5wnlelbwhhjcmbjnq62.jpg" alt="Interactive card details form"/>
 
+### 📄 Notifications page
+<img src="https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto:good,w_900/Challenges/ouo4noiahpnxrrr0ds8o.jpg" alt="Notifications page"/>
+
+
 
 ## ✒️ Autores
 
